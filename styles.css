@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -69,8 +69,24 @@ section {
     animation: fadeIn 2s ease-in-out;
 }
 
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
 .service {
-    margin-bottom: 40px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.service:hover {
+    transform: scale(1.05);
 }
 
 form {
@@ -131,5 +147,9 @@ footer {
 
     .hero {
         padding: 100px 20px;
+    }
+
+    .services-container {
+        flex-direction: column;
     }
 }
